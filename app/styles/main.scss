@@ -51,12 +51,26 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
+    text-align:center;
     border-bottom: 1px solid #e5e5e5;
     .btn {
         font-size: 21px;
         padding: 14px 24px;
     }
+}
+
+.img-rounded, .img-circle, .img-thumbnail {
+        width:150px;
+        height:250px;
+        margin-left: 40px;
+}
+
+.choose {
+    color:red;
+    font-size:60px;
+}
+.lead {
+    padding-bottom: 80px;
 }
 
 /* Supporting marketing content */
@@ -89,5 +103,42 @@ body {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
+        display: inline-block;
     }
+}
+
+.hide {
+    display: none;
+}
+
+.heroes {
+    width:600px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.heroes ul {
+    display: inline-block;
+     list-style-type: none;
+}
+
+.heroes li {
+    display: inline-block;
+    list-style-type: none;
+    text-indent: -10px;
+}
+
+.heroActions {
+    display: none;
+}
+
+.wizard img {
+    padding-top: 30px;
+    padding-bottom 30px;
+    width:375px;
+    height:250px;
+}
+
+.show {
+    display: block;
 }

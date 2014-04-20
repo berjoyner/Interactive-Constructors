@@ -4,20 +4,20 @@ function Player(name, race, weapon) {
 	this.race= race;
 	this.weapon = weapon;
 	this.attack = function(target) {
-		if( this.race.type == "Wizard") {
+		if( this.type == "Wizard") {
 			console.log("You attack enemies with your sexy Staff!");
 			console.log("You attack for 200 damage!");
-		} else if (this.race.type =="Barbarian"){
+		} else if (this.type =="Barbarian"){
 			console.log("You attack enemies with your slaying Sword!");
 			console.log("You attack for 400 damage!");
-		} else if (this.race.type =="Demon Hunter"){
+		} else if (this.type =="Demon Hunter"){
 			console.log("You attack enemies with your badass Bow!");
 			console.log("You attack for 100 damage!");
 		}
 
 		if (target.health > 0){
-			target.health = target.health - this.race.damage;
-			if(target.health <= 0) {
+			target.health = target.health- this.damage;
+			if(target.armor <= 0) {
 				alert("You vanquish the Monster!");
 				target.health = 0;
 			}	

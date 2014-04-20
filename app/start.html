@@ -28,7 +28,7 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav navbar-inverse pull-right">
+               <ul class="nav navbar-inverse pull-right">
                     <li class="active"><a href="index.html">Home Screen</a></li>
                 </ul>
                 <h3 class="text-muted">Diablo 4</h3>
@@ -38,8 +38,34 @@
                 <img src="images/diablo4.jpg">
                 <h1>Diablo 4</h1>
                 <p class="lead">The beast has awakened...</p>
-                <p><a class="btn btn-md btn-danger" href="start.html">Press Start! <span class="glyphicon glyphicon-fire"></span></a></p>
+                <!-- <p><a class="btn btn-md btn-danger" href="start.html">Press Start! <span class="glyphicon glyphicon-fire"> --></span></a></p>
+                <p class="choose"> Choose your Hero!</p>
+            <center><div class="heroes">
+                <ul>
+                    <li>
+                        <img src="images/wizard.jpg" alt="" class="img-rounded">
+                        <div class="heroActions">
+                            <button type="button" class="btn btn-success btn-sm btn-block">You've Chosen Well! Let's go!</button>
+                            <div class="wizard">
+                                <button>attack</button>
+                                <img src="images/ghost.jpg">
+                                <p class="bg-danger"> A Ghost Appears! You engage in battle! </p>
+                            </div>
+                            <div class="nextDiv show">
+                                
+                            </div>
+
+                        </div>
+                    </li>
+
+                       <li> <img src="images/barb.jpg" alt="" class="img-circle">
+                       <div class="heroActions"><a class="btn btn-danger barb" href="#" role="button">Begin Quest</a></div></li>
+                        <li><img src="images/demonhunt.jpg" alt="..." class="img-thumbnail">
+                        <div class="heroActions"><a class="btn btn-danger demonhunt" href="#" role="button">Begin Quest</a></div></li>
+                    </ul>
+                </div></center>
             </div>
+
 
         <!--     <div class="row marketing">
                 <div class="col-lg-6">
@@ -60,7 +86,7 @@
             </div>
 
             <div class="footer">
-                <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
+               <!--  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
             </div>
 
         </div>
@@ -100,6 +126,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/jquery-1.11.0.min.js"></script>
         <script src="scripts/main.js"></script>
+        <script src="scripts/start.js"></script>
         <!-- endbuild -->
 </body>
 </html>
