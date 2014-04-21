@@ -7,14 +7,11 @@ function Player(name, race, weapon) {
 	this.weapon = weapon;
 	this.attack = function(target) {
 		if( this.race.type == "Wizard") {
-			console.log("You attack enemies with your sexy Staff!");
-			console.log("You attack for 200 damage!");
+			alert("You attack enemies with your sexy Staff for 200 damage!");
 		} else if (this.race.type =="Barbarian"){
-			console.log("You attack enemies with your slaying Sword!");
-			console.log("You attack for 400 damage!");
+			alert("You attack enemies with your slaying Sword for 400 damage!");
 		} else if (this.race.type =="Demon Hunter"){
-			console.log("You attack enemies with your badass Bow!");
-			console.log("You attack for 100 damage!");
+			alert("You attack enemies with your badass Bow for 100 damage!");
 		}
 
 		if (target.health > 0){
@@ -78,8 +75,21 @@ var Yogart = new Player("Yogart", Barbarian, "Sword");
 var Sora = new Player("Sora", DemonHunter, "Bow");
 
 var Ghost = new Monster("Undead", 200, 50);
-var Succubus = new Monster("Demon", 300, 100);
+var Succubus = new Monster("Demon", 500, 500);
 var Werewolf = new Monster("Changling", 400, 150);
+
+
+//  myMonster.attack($(this).attr("title"));
+
+// this.attack = function(target) {
+
+// $(".battlefield .player").append("<h1>you killed: " + target.name
+
+
+// $(".btn.attack").click()
+
+
+
 
 
 
