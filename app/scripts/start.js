@@ -37,6 +37,7 @@ $(".go").click(function() {
 $(".attackWiz").click(function() {
 	event.preventDefault();
 	Ariden.attack(Ghost);
+	Ghost.attack(Ariden);
 	// $(".attackWiz").hide();
 	
 });
@@ -44,12 +45,14 @@ $(".attackWiz").click(function() {
 $(".attackBarb").click(function() {
 	event.preventDefault();
 	Yogart.attack(Succubus);
+	Succubus.attack(Yogart);
 	// $(".attackBarb").hide();
 });
 
 $(".attackDemon").click(function() {
 	event.preventDefault();
 	Sora.attack(Werewolf);
+	Werewolf.attack(Sora);
 	// $(".attackDemon").hide();
 });
 

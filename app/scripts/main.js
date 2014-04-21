@@ -39,14 +39,12 @@ function Monster(type, health, damage) {
 	this.damage = damage; 
 	this.attack = function(target) {
 		if( this.type == "Undead") {
-			console.log("You are being attacked by a Grinning Ghost!");
-			console.log("You have been attacked for 50 points of damage!");
+			alert("You are being attacked by a Grinning Ghost for 50 points of damage!");
 		} else if (this.type =="Demon"){
-			console.log("You are being attacked by a Sassy Succubus!");
-			console.log("You have been attacked for 100 points of damage!");
+			alert("You are being attacked by a Sassy Succubus for 100 points of damage!");
 		} else if (this.type =="Changling"){
-			console.log("You are being attacked by a Wandering Werewolf!");
-			console.log("You have been attacked for 150 points of damage!");
+			alert("You are being attacked by a Wandering Werewolf for 150 points of damage!");
+			
 		}
 
 		if (target.armor > 0){
