@@ -55,8 +55,9 @@
  			var Succubus = new Monster("Demon", 500, 500);
  			var Barbarian = new Race("Barbarian", 200, 400, 250);
 
- 			Succubus.health = 0;
+ 			Succubus.health = 1;
  			Yogart.attack(Succubus);
+ 			expect(Succubus.health).to.be.equal(0);
 
  		});
  	});
